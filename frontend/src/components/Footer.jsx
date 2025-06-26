@@ -8,6 +8,9 @@ import { theme } from "../settings";
  * Outer footer wrapper
  */
 const FooterWrapper = styled.footer`
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
   padding: ${theme.padding}px 0;
   background: #000; /* or whatever background you prefer */
 `;

@@ -37,6 +37,8 @@ const Title = styled.h1`
   font-weight: bold;
   margin: 0 15px 0 10px;
   font-size: 28px;
+  display: flex;
+  min-width: 300px;
 
   @media (max-width: ${theme.responsive.medium}px) {
     display: none;
