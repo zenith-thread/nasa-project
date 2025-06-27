@@ -1,5 +1,5 @@
-import { habitablePlanets } from "../../models/planets.model.js";
+import { getAllPlanets } from "../../models/planets.model.js";
 
-export const getAllPlanets = (req, res) => {
-  return res.json(habitablePlanets);
+export const httpGetAllPlanets = (req, res) => {
+  return res.json(getAllPlanets());
 };

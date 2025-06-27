@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export const habitablePlanets = [];
+const habitablePlanets = [];
 
 const isHabitable = (planet) =>
   planet["koi_disposition"] === "CONFIRMED" &&
@@ -39,3 +39,5 @@ export const loadPlanetsData = () => {
       })
   );
 };
+
+export const getAllPlanets = () => habitablePlanets;
